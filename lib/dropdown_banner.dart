@@ -14,9 +14,8 @@ typedef void _IntCallback(int id);
 class DropdownBanner extends StatefulWidget {
   /// Builder in which to construct the app content that you are wrapping
   final Widget child;
-  final GlobalKey<NavigatorState> navigatorKey;
 
-  DropdownBanner({@required this.child, @required this.navigatorKey}) {
+  DropdownBanner({@required this.child}) {
     DartNotificationCenter.registerChannel(channel: _BANNERCHANNEL);
   }
 
