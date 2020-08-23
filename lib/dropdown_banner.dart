@@ -109,13 +109,7 @@ class _DropdownBannerState extends State<DropdownBanner> {
         children: <Widget>[
           Align(
             alignment: Alignment.center,
-            child: Navigator(
-              key: widget.navigatorKey,
-              onGenerateRoute: (settings) => MaterialPageRoute(
-                settings: settings,
-                builder: (_) => widget.child,
-              ),
-            ),
+            child: widget.child,
           ),
           ...banners
         ],
